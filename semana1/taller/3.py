@@ -43,7 +43,7 @@ class Store:
             for product in self.products_list.values():
                 print(product)
 
-# Fuction to enter a valid number
+# Fuction to enter a valid number // quantity + price
 def input_int(prompt):
     while True:
         try:
