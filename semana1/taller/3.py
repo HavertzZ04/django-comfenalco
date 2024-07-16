@@ -5,11 +5,11 @@ class Product:
         self.price = price
     
     def __str__(self):
-        return f"    🏷️  {self.name}: quantity={self.quantity} price={self.price}"
+        return f"    🏷️  {self.name} -> quantity: {self.quantity} // price: {self.price}"
 
 class Store:
     def __init__(self):
-        self.products_list = {}
+        self.products_list = {}  
 
     def add_product(self, name, quantity, price):
         if name in self.products_list:
@@ -43,11 +43,11 @@ class Store:
             for product in self.products_list.values():
                 print(product)
 
-# Fuction to enter a valid number // quantity + price
-def input_int(prompt):
+# Function to enter a valid number // quantity + price
+def input_int(response):
     while True:
         try:
-            return int(input(prompt))
+            return int(input(response))
         except ValueError:
             print("⛔ Please enter a valid number..")
 
